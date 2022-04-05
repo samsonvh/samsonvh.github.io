@@ -1,0 +1,70 @@
+#section-4 {
+    position: relative;
+    padding: 0 24px 24px;
+    border: 1px solid #f95f22;
+}
+
+.section-heading {
+    margin: 24px auto 8px;
+    padding: 12px 24px;
+    display: block;
+    width: fit-content;
+    color: #fff;
+    background-color: #f95f22;
+    border-radius: 6px;
+}
+
+.tour-catalog-container {
+    position: relative;
+}
+
+.tour-catalog-image {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid #f95f22;
+}
+
+
+/* MOBILE CSS */
+
+@media screen and (max-width: 1180px) {
+    .vertical-line {
+        display: none;
+    }
+    .tour-catalog-image-container {
+        height: 50vw;
+    }
+    .tour-catalog-image {
+        height: 50vw;
+    }
+}
+
+
+/* DESKTOP CSS */
+
+@media screen and (min-width: 1180px) {
+    .vertical-line {
+        position: absolute;
+        top: 14%;
+        left: 50%;
+        transform: translateX(-50%);
+        vertical-align: top;
+        height: 80%;
+        width: 1px;
+        background-color: #f95f22;
+    }
+    #weekend-tour-section {
+        display: inline-block;
+        width: calc(50% - 12px);
+    }
+    #workshop-section {
+        vertical-align: top;
+        margin-left: 18px;
+        display: inline-block;
+        width: calc(50% - 12px);
+    }
+    .tour-catalog-image {
+        height: 30vw;
+    }
+}

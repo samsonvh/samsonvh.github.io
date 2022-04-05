@@ -1,0 +1,76 @@
+#section-3 {
+    position: relative;
+    padding: 12px 24px 24px;
+    min-height: 10vh
+}
+
+#station-bar {
+    position: relative;
+    height: 10vh;
+}
+
+#station-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: fit-content;
+}
+
+.current-station {
+    background-color: #f95f22;
+    color: #fff !important;
+}
+
+#station-catalog-section {
+    vertical-align: top;
+    position: relative;
+    height: 50vw;
+}
+
+#station-image-container {
+    height: 100%;
+    border-radius: 12px;
+}
+
+#station-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #f95f22;
+    border-radius: 12px;
+}
+
+
+/* MOBILE CSS */
+
+@media screen and (max-width: 1180px) {
+    .station-name {
+        display: inline-block;
+        margin-left: 8px;
+        padding: 1vw 24px;
+        width: fit-content;
+        font-size: 3vw;
+        line-height: 20px;
+        border: 1px solid #f95f22;
+        border-radius: 4px;
+        color: #f95f22;
+    }
+}
+
+
+/* DESKTOP CSS */
+
+@media screen and (min-width: 1180px) {
+    .station-name {
+        display: inline-block;
+        margin-left: 8px;
+        padding: 12px 24px;
+        width: fit-content;
+        font-size: 2vw;
+        line-height: 20px;
+        border: 1px solid #f95f22;
+        border-radius: 4px;
+        color: #f95f22;
+    }
+}

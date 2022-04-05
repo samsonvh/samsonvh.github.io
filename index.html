@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saigon Paddle Station</title>
+    <link rel="icon" href="/img/logo.png" type="image/icon">
+
+    <link rel="stylesheet" href="/css/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/banner.css">
+    <link rel="stylesheet" href="/css/section1/section1.css">
+    <link rel="stylesheet" href="/css/section2/section2.css">
+    <link rel="stylesheet" href="/css/section3/section3.css">
+    <link rel="stylesheet" href="/css/section4/section4.css">
+    <link rel="stylesheet" href="/css/footer.css">
+
+    <script src="/js/master.js"></script>
+    <script src="/js/banner.js"></script>
+    <script src="/js/changeCatalog.js"></script>
+    <script src="/js/catalogType.js"></script>
+    <script src="/js/changeStation.js"></script>
+
+</head>
+
+<body>
+    <div id="main">
+        <div id="nav-bar">
+            <div id="logo-container">
+                <img src="/img/logo.png" alt="logo-image" id="logo-image">
+            </div>
+            <h1 id="brand-name">Saigon Paddle Station - TramCheo.vn</h1>
+            <div id="nav-button-container">
+                <a href="http://m.me/SaigonSUPStation" id="nav-register-button" target="_blank">Register</a>
+            </div>
+        </div>
+        <div id="banner">
+            <div id="banner-image-container">
+                <img src="/img/banner/1.JPG" alt="banner-image" id="banner-image">
+            </div>
+            <div class="left-button-container change-button-container">
+                <i class="ti-angle-left left-button change-button" onclick="changeBanner(false)"></i>
+            </div>
+            <div class="right-button-container change-button-container">
+                <i class="ti-angle-right right-button change-button" onclick="changeBanner(true)"></i>
+            </div>
+        </div>
+        <div id="section-1">
+            <div id="individual-image-container">
+                <img src="/img/section1/1.JPG" alt="individual-image" id="individual-image">
+            </div>
+            <div id="promotion-container">
+                <div id="promotion-detail-container">
+                    <div id="promotion-infor-container">
+                        <p id="promotion-infor">
+                            PROMOTION INFORMATION
+                        </p>
+                        <p id="timer">
+
+                        </p>
+                    </div>
+                    <div id="promotion-button-container">
+                        <a href="http://m.me/SaigonSUPStation" id="promotion-register-button" target="_blank">Register Now  </a>
+                    </div>
+                </div>
+                <div class="left-button-container change-button-container">
+                    <i class="ti-angle-left left-button change-button"></i>
+                </div>
+                <div class="right-button-container change-button-container">
+                    <i class="ti-angle-right right-button change-button"></i>
+                </div>
+            </div>
+        </div>
+        <div id="section-2">
+            <div id="video-section">
+                <div id="video-container">
+                    <video src="/video/pexels-mikhail-nilov-7677379.mp4" autoplay muted loop></video>
+                </div>
+                <div id="form-button-container">
+                    <a href="#" id="form-button" target="_blank">Group Register</a>
+                </div>
+            </div>
+            <div id="catalog-section">
+                <div id="catalog-image-container">
+                    <img src="/img/section2/1.JPG" alt="catalog-image" id="catalog-image">
+                </div>
+                <div class="left-button-container change-button-container">
+                    <i class="ti-angle-left left-button change-button" onclick="changeCatalog(false,2)"></i>
+                </div>
+                <div class="right-button-container change-button-container">
+                    <i class="ti-angle-right right-button change-button" onclick="changeCatalog(true,2)"></i>
+                </div>
+            </div>
+        </div>
+        <div id="section-3">
+            <div id="station-bar">
+                <div id="station-container">
+                    <div class="station-name current-station" id="pmh-station">
+                        Phu My Hung
+                    </div>
+                    <div class="station-name" id="homie-station" onclick="changeStation('homie')">
+                        Homie
+                    </div>
+                </div>
+            </div>
+            <div id="station-catalog-section">
+                <div id="station-image-container">
+                    <img src="/img/section3/PMH/1.JPG" alt="station-image" id="station-image">
+                </div>
+                <div class="left-button-container change-button-container">
+                    <i class="ti-angle-left left-button change-button" id="left-station-button" onclick="changeCatalogType(false,3,'PMH')"></i>
+                </div>
+                <div class="right-button-container change-button-container">
+                    <i class="ti-angle-right right-button change-button" id="right-station-button" onclick="changeCatalogType(true,3,'PMH')"></i>
+                </div>
+            </div>
+        </div>
+        <div id="section-4">
+            <div id="weekend-tour-section">
+                <h3 class="section-heading">
+                    Weekend Tour
+                </h3>
+                <div class="tour-catalog-container">
+                    <div class="tour-catalog-image-container">
+                        <img src="/img/section4/tour/1.JPG" alt="tour-catalog-image" class="tour-catalog-image" id="tour-image">
+                        <div class="left-button-container change-button-container">
+                            <i class="ti-angle-left left-button change-button" onclick="changeCatalogType(false,4,'tour')"></i>
+                        </div>
+                        <div class="right-button-container change-button-container">
+                            <i class="ti-angle-right right-button change-button" onclick="changeCatalogType(true,4,'tour')"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vertical-line"></div>
+            <div id="workshop-section">
+                <h3 class="section-heading">
+                    Workshop
+                </h3>
+                <div class="tour-catalog-container">
+                    <div class="tour-catalog-image-container">
+                        <img src="/img/section4/workshop/1.JPG" alt="tour-catalog-image" class="tour-catalog-image" id="workshop-image">
+                        <div class="left-button-container change-button-container">
+                            <i class="ti-angle-left left-button change-button" onclick="changeCatalogType(false,4,'workshop')"></i>
+                        </div>
+                        <div class="right-button-container change-button-container">
+                            <i class="ti-angle-right right-button change-button" onclick="changeCatalogType(true,4,'workshop')"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            FOOTER
+        </div>
+    </div>
+
+    <script>
+    </script>
+</body>
+
+</html>

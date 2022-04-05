@@ -1,0 +1,67 @@
+#nav-bar {
+    position: fixed;
+    top: 0;
+    height: 10vh;
+    z-index: 1;
+    background-color: #fff;
+    width: 100%;
+    border-bottom: 1px solid #f95f22;
+}
+
+#logo-container {
+    margin: 1vh 2vh;
+    display: inline-block;
+    height: 80%;
+}
+
+#logo-image {
+    height: 100%;
+}
+
+#nav-button-container {
+    float: right;
+}
+
+#nav-register-button {
+    margin: calc(3vh - 6px);
+    padding: 6px 24px;
+    display: block;
+    background-color: #f95f22;
+    border-radius: 50px;
+    line-height: 4vh;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2vw;
+}
+
+#nav-register-button:hover {
+    opacity: 0.8;
+}
+
+
+/* MOBILE CSS */
+
+@media screen and (max-width: 1100px) {
+    #brand-name {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        color: #f95f22;
+        font-size: 4vw;
+    }
+}
+
+
+/* DESKTOP CSS */
+
+@media screen and (min-width: 1100px) {
+    #brand-name {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translateX(-20%) translateY(-50%);
+        color: #f95f22;
+        font-size: 4vh;
+    }
+}
